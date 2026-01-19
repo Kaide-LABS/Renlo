@@ -1,1 +1,25 @@
+/* Renlo Brand Font - Editorial serif for headlines */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 @import "tailwindcss";
+
+/* Custom font classes */
+.font-serif-brand {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+/* Modal slide-up animation */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
+}
